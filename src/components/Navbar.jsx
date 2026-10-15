@@ -1,5 +1,7 @@
 import "./Navbar.css";
 
+// testing git changes
+
 const Navbar = () => {
     return (
         <nav className="navbar">
