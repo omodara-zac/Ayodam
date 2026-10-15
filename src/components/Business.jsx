@@ -25,7 +25,7 @@ const Business = () => {
     }, []);
 
     return (
-        <section
+        <section id="business-section"
             className={`business-section ${isVisible ? "business-visible" : ""}`}
             ref={businessRef}
         >

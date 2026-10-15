@@ -250,8 +250,10 @@
 
     .hero-display {
         margin-left: 0;
-        width: 90%;
-        display: none;
+        width: min(90%, 760px);
+        box-sizing: border-box;
+        margin: 50px auto 0;
+        gap: 20px;
     }
 
     .hero-stat {
@@ -317,7 +319,9 @@
     }
 
     .hero-buttons {
-        margin-left: 78px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1px;
         gap: 15px;
     }
 
@@ -328,13 +332,13 @@
     }
 
     .hero-display {
-        /* flex-direction: column; */
-        /* gap: 15px; */
-        /* padding: 20px 30px; */
-        /* margin-top: 100px; */
-        margin-left: 25px;
-        width: 90%;
-        display: none;
+        width: calc(100% - 32px);
+        max-width: 480px;
+        box-sizing: border-box;
+        margin: 36px auto 0;
+        gap: clamp(8px, 3vw, 15px);
+        padding: 18px 12px;
+        margin-top: 180px;
     }
 
         .hero-stat {
