@@ -1,0 +1,370 @@
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.444),
+            rgb(0, 0, 0)),
+        url("/images/cement-warehouse.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    /* width: 100%; */
+    margin-top: 30px;
+}
+
+.hero-title {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(4rem, 9vw, 7.5rem);
+    /* letter-spacing: 0.015em; */
+    text-transform: uppercase;
+    color: rgba(255, 0, 0, 0.844);
+    line-height: 1.05;
+    padding-top: 155px;
+    padding-left: 60px;
+    /* padding: 50px 0 0px 0px 40px; */
+}
+/* 
+.hero-highlight {
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-left: -40px;
+    display: none;
+
+} */
+
+.hero-description {
+    font-family: "Libre Baskerville", serif;
+    font-size: clamp(1rem, 1.35vw, 1.2rem);
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    margin-top: 15px;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+.hero-desc-highlight {
+    display: block;
+}
+
+.hero-buttons {
+    margin-left: 3.7rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-btn {
+    width: 170px;
+    height: 50px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    background-color: rgba(255, 0, 0, 0.844);
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hero-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 4, 4, 0.375);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.9s ease;
+
+    z-index: -1;
+}
+
+.hero-btn:hover::before {
+    transform: scaleX(1);
+}
+
+
+.hero-btn-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations */
+
+.hero-title {
+    animation: dropIn 1s ease-out both;
+}
+
+.hero-highlight {
+    display: inline-block;
+    animation: dropIn 1s ease-out 0.3s both;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-description {
+    animation: dropIn 1s ease-out 0.6s both;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.hero-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: fit-content;
+    max-width: 90%;
+    padding: 25px 35px;
+    margin-top: 50px;
+    background: linear-gradient(135deg, #b5121b, #e32636);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(181, 18, 27, 0.25);
+    margin-left: 732px;
+}
+
+.hero-stat {
+    min-width: 110px;
+    text-align: center;
+    color: white;
+}
+
+.hero-stat h3 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.hero-stat p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+/* Tablet responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content {
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 120px;
+        line-height: 1.1;
+        padding-top: 420px;
+        padding-left: 5px;
+    }
+
+    .hero-description {
+        font-size: 25px;
+        line-height: 1.7;
+        max-width: 85%;
+        padding-left: 0;
+        margin: 15px auto 20px;
+    }
+
+    .hero-desc-highlight {
+        display: inline;
+    }
+
+    .hero-buttons {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* padding: 20px; */
+    }
+
+    .hero-btn {
+        width: 200px;
+        height: 60px;
+        font-size: 0.9rem;
+        
+    }
+
+    .hero-btn-link {
+        font-size: 20px;
+    }
+
+    .hero-display {
+        margin-left: 0;
+        width: 90%;
+        display: none;
+    }
+
+    .hero-stat {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .hero-stat h3 {
+        font-size: 25px;
+    }
+
+    .hero-stat p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 105vh;
+        /* background-image:
+        linear-gradient(rgba(0, 0, 0, 0.444),
+            rgb(0, 0, 0)),
+        url("/images/Hero-mobile.jpg"); */
+    }
+
+    /* .hero-title {
+        font-size: clamp(3rem, 8vw, 6rem);
+        font-size: 60px;
+        padding-top: 120px;
+        padding-left: 80px;
+    }
+
+    .hero-description {
+        font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+        padding-left: 40px;
+        display: inline;
+    } */
+
+     .hero-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 60px;
+        line-height: 1.1;
+        padding-top: 300px;
+        padding-left: 5px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 100%;
+        padding-left: 2px;
+        margin: 15px auto 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-desc-highlight {
+        display: inline;
+    }
+
+    .hero-buttons {
+        margin-left: 55px;
+        gap: 15px;
+    }
+
+    .hero-btn {
+        width: 150px;
+        height: 45px;
+        font-size: 0.85rem;
+    }
+
+    .hero-display {
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        /* padding: 20px 30px; */
+        /* margin-top: 100px; */
+        margin-left: 25px;
+        width: 90%;
+        display: none;
+    }
+
+        .hero-stat {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .hero-stat h3 {
+        font-size: 23px;
+    }
+
+    .hero-stat p {
+        font-size: 11px;
+    }
+
+    
+
+}
+
+@media (max-width: 600px) {
+    /* .hero-display {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 10px;
+        padding: 20px 10px;
+    } */
+
+
+}
+
+.divide {
+    border: 2px solid rgba(255, 255, 255, 0.919);
+    height: 40px;
+}

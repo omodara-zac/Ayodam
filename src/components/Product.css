@@ -1,0 +1,133 @@
+
+.product {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.product-textarea {
+    flex: 1;
+    /* text-align: center; */
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.product-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: rgba(255, 0, 0, 0.844);
+    margin-bottom: 20px;
+}
+
+.picture-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 0.4s ease;
+}
+
+.product-image {
+    border-radius: 14px;
+    transition: transform 0.8s ease;
+    filter: brightness(95%);
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+/* Trigger animations only when visible */
+.product.product-visible .product-textarea {
+    animation: slideFromLeft 1.2s ease-out forwards;
+}
+
+.product.product-visible .picture-area {
+    animation: slideFromRight 1.2s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+
+
+.product-textarea p {
+  font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        margin-left: 10px;
+    } 
+    .product-textarea,
+    .picture-area {
+        width: 100%;
+    }
+
+     .product-image {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        margin-left: 10px;
+    }
+
+    .product-textarea,
+    .picture-area {
+        width: 100%;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+}
