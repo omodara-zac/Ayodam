@@ -129,6 +129,7 @@
     .about {
         flex-direction: column;
         margin-left: -10px;
+        margin-top: -10px;
     }
     .about-title {
         font-size: 32px;
