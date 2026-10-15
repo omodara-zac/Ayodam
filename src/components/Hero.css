@@ -306,9 +306,10 @@
         font-size: 15px;
         line-height: 1.7;
         max-width: 100%;
-        padding-left: 2px;
+        padding-left: 1px;
         margin: 15px auto 0;
         margin-bottom: 20px;
+        margin-left: -5px;
     }
 
     .hero-desc-highlight {
@@ -316,12 +317,12 @@
     }
 
     .hero-buttons {
-        margin-left: 55px;
+        margin-left: 78px;
         gap: 15px;
     }
 
     .hero-btn {
-        width: 150px;
+        width: 130px;
         height: 45px;
         font-size: 0.85rem;
     }

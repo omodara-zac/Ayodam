@@ -121,6 +121,11 @@
         padding: 40px 20px;
         margin-left: 10px;
     }
+    
+
+    .product-textarea p {
+        font-size: 10px;
+    }
 
     .product-textarea,
     .picture-area {

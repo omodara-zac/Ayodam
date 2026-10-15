@@ -133,7 +133,8 @@
     .about-description {
         /* max-width: 100%; */
         /* border: 1px solid #444; */
-        font-size: 15px;
+        font-size: 10px;
+        margin-left: -5px;
     }
 
     .about-image-container,
