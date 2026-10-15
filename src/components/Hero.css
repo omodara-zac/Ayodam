@@ -272,7 +272,7 @@
 
 @media (max-width: 768px) {
     .hero {
-        height: 98vh;
+        height: 100vh;
         /* background-image:
         linear-gradient(rgba(0, 0, 0, 0.444),
             rgb(0, 0, 0)),
