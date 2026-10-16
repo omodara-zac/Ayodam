@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Outlet from './components/Outlet';
 import Contact from './pages/Contact';
+import ScrollToTop from "./components/ScrollToTop";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
