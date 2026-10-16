@@ -1,0 +1,254 @@
+.outlets-section {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 55px;
+    padding: 90px 8%;
+    overflow: hidden;
+    background: #f8f8fb;
+}
+
+/* Text content */
+.outlets-content {
+    min-width: 0;
+}
+
+.outlets-subtitle {
+    color: rgba(255, 0, 0, 0.844);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.outlets-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(28px, 3.2vw, 43px);
+    font-weight: 800;
+    line-height: 1.25;
+    color: #171742;
+    margin-bottom: 22px;
+}
+
+.outlets-title span {
+    color: rgba(255, 0, 0, 0.844);
+}
+
+.outlets-description {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+.outlets-list-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #171742;
+    margin-bottom: 18px;
+}
+
+.outlets-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 20px;
+}
+
+.outlet-location {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #444;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.outlet-location-dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.844);
+}
+
+/* Outlet image */
+.outlets-image-wrapper {
+    position: relative;
+    min-width: 0;
+    height: 570px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(23, 23, 66, 0.15);
+}
+
+.outlets-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.outlets-image-wrapper:hover .outlets-image {
+    transform: scale(1.05);
+}
+
+.outlets-image-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(8, 8, 25, 0.85),
+        transparent 55%
+    );
+    pointer-events: none;
+}
+
+.outlets-image-caption {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 25px;
+    right: 25px;
+    color: #fff;
+}
+
+.outlets-image-caption h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.outlets-image-caption p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Slide-in animations */
+.outlets-from-left {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.outlets-from-right {
+    opacity: 0;
+    transform: translateX(70px);
+    transition:
+        opacity 0.9s ease 0.15s,
+        transform 0.9s ease 0.15s;
+}
+
+.outlets-visible .outlets-from-left,
+.outlets-visible .outlets-from-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .outlets-section {
+        grid-template-columns: 1fr 0.85fr;
+        gap: 30px;
+        padding: 70px 5%;
+    }
+
+    .outlets-title {
+        font-size: 30px;
+    }
+
+    .outlets-description {
+        font-size: 14px;
+    }
+
+    .outlets-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .outlets-image-wrapper {
+        height: 480px;
+    }
+
+    .outlets-image-caption h3 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .outlets-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 6%;
+    }
+
+    .outlets-title {
+        font-size: 29px;
+    }
+
+    .outlets-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .outlets-list-title {
+        font-size: 18px;
+    }
+
+    .outlets-list {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .outlet-location {
+        font-size: 14px;
+    }
+
+    .outlets-image-wrapper {
+        height: 380px;
+    }
+
+    .outlets-image-caption {
+        bottom: 22px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .outlets-image-caption h3 {
+        font-size: 19px;
+    }
+
+    .outlets-image-caption p {
+        font-size: 13px;
+    }
+
+    .outlets-from-left {
+        transform: translateX(-35px);
+    }
+
+    .outlets-from-right {
+        transform: translateX(35px);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .outlets-from-left,
+    .outlets-from-right {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .outlets-image {
+        transition: none;
+    }
+}

@@ -25,13 +25,30 @@ const Footer = () => {
             </div>
 
             <div className="footer-locations">
-                <p className="footer-title">Locations</p>
+                <div className="footer-location1">
+                <p className="footer-title2">Locations</p>
                 <p>Our mini-stores are located at:</p>
-                <p> <FaMapMarkerAlt className="address-icon" />Igbagbo, Ibadan</p>
-                <p> <FaMapMarkerAlt className="address-icon" />Adesete, Ibadan</p>
-                <p> <FaMapMarkerAlt className="address-icon" />Wisdom, Ibadan</p>
-            </div>
+                <p><FaMapMarkerAlt className="address-icon" />Adesete<span className="ibadan">, Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Igbagbo<span className="ibadan">, Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Wisdom<span className="ibadan">, Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Araoyo<span className="ibadan">, Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Ladojo<span className="ibadan">, Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Eniosa<span className="ibadan">, Ibadan</span></p>
+                    <p className="see-more"><a href="#outlets" className="see-more-link">        View All Outlet Locations →
+</a></p>
+                </div>
 
+                <div className="footer-location2">
+                  <p><FaMapMarkerAlt className="address-icon" />Abudoro, Elekuru, <span className="ibadan">Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Elewuro, <span className="ibadan">Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Pakiti, <span className="ibadan">Ibadan</span></p>
+                     <p><FaMapMarkerAlt className="address-icon" />Olooyo, Diamond Estate, <span className="ibadan">Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Olanla, Iyana One, <span className="ibadan">Ibadan</span></p>
+                    <p><FaMapMarkerAlt className="address-icon" />Opposite Olorunda Police Station.</p>
+                    
+            </div>
+            </div>
+          
             <div className="footer-copyright">
                 Copyright © 2026 - AYODAM PROSPERITY
             </div>

@@ -1,17 +1,22 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
     return (
+
         <nav className="navbar">
             <div className="navbar-logo">
-                <img src="/images/ayodam-logo.jpeg" alt="AYODAM logo" />
+                <Link to="/">
+                    <img src="/images/ayodam-logo.jpeg" alt="AYODAM logo" />
+                </Link>
             </div>
 
             <div className="navbar-links">
-                <a href="#products">Products</a>
-                <a href="#contact">Contact Us</a>
+                <a href="/#outlets">Outlets</a>
+                <Link to="/contact">Contact Us</Link>
             </div>
         </nav>
+
     );
 };
 
