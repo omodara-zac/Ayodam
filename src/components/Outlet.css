@@ -1,3 +1,7 @@
+#outlets {
+    scroll-margin-top: 100px;
+}
+
 .outlets-section {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;

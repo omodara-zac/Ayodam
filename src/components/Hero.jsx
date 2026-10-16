@@ -65,8 +65,8 @@ const Hero = () => {
                 </button>
 
                 <button className="hero-btn">
-                    <a href="#contact" className="hero-btn-link">
-                        Contact Us
+                    <a href="/#outlets" className="hero-btn-link">
+                        Outlets
                     </a>
                 </button>
             </div>
@@ -75,17 +75,17 @@ const Hero = () => {
                 <div className="hero-stat">
                     <h3>{customers}+</h3>
                     <p>Customers</p>
-                    
+
                 </div>
 
-                    <span className='divide'></span>
+                <span className='divide'></span>
 
                 <div className="hero-stat">
                     <h3>{experience}+</h3>
                     <p>Years of Experience</p>
                 </div>
 
-                    <span className='divide'></span>
+                <span className='divide'></span>
 
                 <div className="hero-stat">
                     <h3>{satisfaction}%</h3>
@@ -93,7 +93,7 @@ const Hero = () => {
                 </div>
             </div>
         </section>
-        
+
     );
 };
 
