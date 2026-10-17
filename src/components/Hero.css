@@ -103,6 +103,9 @@
 .hero-btn-link {
     color: white;
     text-decoration: none;
+    font-size: 17px;
+    /* padding-top: 17px;
+    padding-left: 40px; */
 }
 
 
@@ -355,6 +358,13 @@
     .hero-stat p {
         font-size: 11px;
     }
+    .hero-btn-link {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    /* padding-top: 17px;
+    padding-left: 40px; */
+}
 
     
 

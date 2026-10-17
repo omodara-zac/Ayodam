@@ -65,7 +65,7 @@ const Hero = () => {
                 </button>
 
                 <button className="hero-btn">
-                    <a href="/#outlets" className="hero-btn-link">
+                    <a href="#outlets" className="hero-btn-link">
                         Outlets
                     </a>
                 </button>

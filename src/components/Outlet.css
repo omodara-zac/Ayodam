@@ -43,6 +43,7 @@
     line-height: 1.9;
     color: #555;
     margin-bottom: 28px;
+    font-weight: 600;
 }
 
 .outlets-list-title {
@@ -51,6 +52,7 @@
     font-weight: 700;
     color: #171742;
     margin-bottom: 18px;
+    
 }
 
 .outlets-list {
@@ -159,9 +161,11 @@
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
     .outlets-section {
-        grid-template-columns: 1fr 0.85fr;
-        gap: 30px;
+        /* grid-template-columns: 1fr 0.85fr; */
+        display: block;
+        /* gap: 80px; */
         padding: 70px 5%;
+        gap: 20px;
     }
 
     .outlets-title {
@@ -178,7 +182,9 @@
     }
 
     .outlets-image-wrapper {
+        width: 100%;
         height: 480px;
+        margin-top: 40px;
     }
 
     .outlets-image-caption h3 {

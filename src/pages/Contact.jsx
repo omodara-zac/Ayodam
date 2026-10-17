@@ -26,18 +26,18 @@ const Contact = () => {
     }, []);
 
     const locations = [
-        "Adesete, Ibadan",
-        "Igbagbo, Ibadan",
-        "Wisdom, Ibadan",
-        "Olooyo, Diamond Estate, Ibadan",
-        "Opposite Olorunda Police Station",
-        "Eniosa, Ibadan",
-        "Abudoro, Elekuru, Ibadan",
-        "Ladojo, Ibadan",
-        "Araoyo, Ibadan",
-        "Elewuro, Ibadan",
-        "Pakiti, Ibadan",
-        "Olanla, Iyana One, Ibadan",
+        "Adesete, Akobo–Ojurin–Olorunda Abaa Road",
+        "Igbagbo, Akobo–Ojurin–Olorunda Abaa Road",
+        "Wisdom, Akobo–Ojurin–Olorunda Abaa Road",
+        "Olooyo, Diamond Estate, Akobo–Ojurin–Olorunda Abaa Road",
+        "Opposite Olorunda Police Station, Akobo–Ojurin–Olorunda Abaa Road",
+        "Eniosa, Akobo–Ojurin–Olorunda Abaa Road",
+        "Abudoro, Elekuru, Akobo–Ojurin–Olorunda Abaa Road",
+        "Ladojo, Akobo–Ojurin–Olorunda Abaa Road",
+        "Araoyo, Akobo–Ojurin–Olorunda Abaa Road",
+        "Elewuro, Akobo–Ojurin–Olorunda Abaa Road",
+        "Pakiti, Akobo–Ojurin–Olorunda Abaa Road",
+        "Olanla, Akobo–Ojurin–Olorunda Abaa Road",
     ];
 
     return (
